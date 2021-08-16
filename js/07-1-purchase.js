@@ -14,24 +14,27 @@
 // 3. Если сумма покупки превышает баланс:
 // -вывести сообщение "На счету не достаточно средств для проведения операции"
 //     -в конце вывести сообщение "Операция завершена"
-
-let balance = 10000;
+// решение с лишним кодом (зато самостоятельно)
+// !СМОТРЕТЬ У РЕПЕТЫ
+let balance = 30000;
 const payment = 20000;
 
-let message1 = `Общая стоимость заказов ${payment} кредитов. Проверяем количество доступных средств на счету`;
+const message1 = `Общая стоимость заказов ${payment} кредитов. Проверяем количество доступных средств на счету`;
 
 console.log(message1);
 
-if (balance > payment) {
+if (balance >= payment) {
     const rest = balance - payment;
-    let message2 = `На счету осталось ${rest} кредитов`;
+    const message2 = `На счету осталось ${rest} кредитов.`;
     const message3 = `Спасибо за покупку!`;
 
     console.log(message2, message3);
-} else {
-    const message2 = `На счету не достаточно средств для проведения операции`;
-    const message3 = `Операция завершена`;
 
-    console.log(message2, message3);
-}
+} else {
+    const message2 = `На счету не достаточно средств для проведения операции.`;
     
+    console.log(message2);
+}
+
+const byeMessage = `Операция завершена.`;
+console.log(byeMessage);

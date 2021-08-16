@@ -53,3 +53,42 @@ if (true) {
 }
 
 console.log(b);
+
+// ИЗ ЗАДАЧИ 2го МОДУЛЯ 2/32
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  // Change code below this line
+
+
+
+  if (password === "jqueryismyjam") return ("Welcome!");
+
+   return ("Access denied, wrong password!");
+
+  // Change code above this line
+}
+
+// ИЗ ЗАДАЧИ 2го МОДУЛЯ 3/32
+
+// Функция checkStorage проверяет возможность
+// оформления заказа и возвращает сообщение о результате.
+// Она принимает два параметра,
+// значения которых будут задаваться во время её вызова.
+
+// available - доступное количество товаров на складе
+// ordered - количество единиц товара в заказе
+// Проведи рефакторинг кода функции checkStorage
+// используя паттерн «ранний возврат».
+
+function checkStorage(available, ordered) {
+  // Change code below this line
+
+if (ordered === 0) { 
+  return "Your order is empty!";
+} if (ordered > available) {
+  return "Your order is too large, not enough goods in stock!";
+} return "The order is accepted, our manager will contact you";
+  
+
+  // Change code above this line
+}
