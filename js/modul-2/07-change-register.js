@@ -3,7 +3,7 @@
  * Например, если строка «JavaScript», то на выходе должена быть строка «jAVAsCRIPT».
  */
 
-const string = 'qWeRTzxCv';
+const string = 'JavaScript';
 const letters = string.split('');
 let invertedString = '';
 

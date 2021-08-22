@@ -30,14 +30,14 @@ let total = 0;
 //   }
 // }
 
-for (const number of numbers) {
-  if (number % 2 !== 0) {
-    console.log('Эту итерацию нужно пропустить', number);
-    continue;
-  }
+// for (const number of numbers) {
+//   if (number % 2 !== 0) {
+//     console.log('Эту итерацию нужно пропустить', number);
+//     continue;
+//   }
 
-  console.log(`${number} - четное!!!!`);
-  total += number;
-}
+//   console.log(`${number} - четное!!!!`);
+//   total += number;
+// }
 
 console.log('Total: ', total);

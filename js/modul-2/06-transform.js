@@ -2,8 +2,9 @@
  * Напиши скрипт, который объединяет все элементы массива в одно строковое значение.
  * Элементов может быть произвольное кол-во.
  * Пусть элементы массива  в строке будут разделены запятой.
- * - Сначала через for
- * - Потом через join()
+ * - Сначала через fo- ПЛОХО, ПОТОМУ ЧТО ОГ ДЕСТРУКТИВЕН
+ * ТО ЕСТЬ ВОЗВРАЩАЕТ МАССИВ НЕИЗМЕНЕННЫЙ
+ * - Потом через join() - ХОРОШО, ПОТОМУ ЧТО ОН НЕДЕСТРУКТИВНЫЙ
  */
 
 const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
@@ -15,8 +16,8 @@ const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
 
 // string = string.slice(0, string.length - 1);
 
-const string = friends.join(',');
+const string = friends.join(', ');
 console.log(friends);
 console.log(string);
 
-// Должно получиться 'Mango,Poly,Kiwi,Ajax'
+// Должно получиться 'Mango, Poly, Kiwi, Ajax'
